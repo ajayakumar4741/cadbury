@@ -1,0 +1,169 @@
+/* From Uiverse.io by ammarsaa, modified for responsiveness */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  max-width: 500px;       /* constrain width */
+  padding: 46px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  margin: 4rem auto;       /* vertical spacing + centered */
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #00bfff;
+  position: relative;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #00bfff;
+}
+
+.title::after {
+  animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.flex > label {
+  flex: 1 1 48%;          /* two columns, wrap to one */
+}
+
+label {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 5px 5px 10px;
+  outline: none;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input + span {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9em;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input:placeholder-shown + span {
+  top: 12.5px;
+}
+
+.input:focus + span,
+.input:valid + span {
+  color: #00bfff;
+  top: 0;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #00bfff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Mobile & small tablet adjustments */
+@media (max-width: 768px) {
+  .form {
+    padding: 30px 20px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .flex > label {
+    flex: 1 1 100%;
+  }
+  .title {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  .message,
+  .signin {
+    font-size: 13px;
+  }
+  .input {
+    padding: 16px 5px 5px 10px;
+    font-size: 0.9rem;
+  }
+  .submit {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

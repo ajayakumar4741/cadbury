@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register from</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body style="background-image: url(chips.avif);">
+    
+<form class="form" id="regform">
+    <p class="title">Register </p>
+    <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" required>
+            <span>Firstname</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" placeholder="" required>
+            <span>Lastname</span>
+        </label>
+    </div>  
+            
+    <label>
+        <input class="input" id="reg-email" type="email" placeholder="" required>
+        <span>Email</span>
+        <span id="reg_span-email"></span>
+    </label> 
+        
+    <label>
+        <input class="input" id="reg-password" type="password" placeholder="" required>
+        <span>password</span>
+        <span id="reg_span-password"></span>
+    </label>
+    <label>
+        <input class="input" id="regrep-password" type="password" placeholder="" required>
+        <span>Confirm password</span>
+        <span id="span-regrep_password"></span>
+    </label>
+    <button class="submit">Submit</button>
+    <span id="result"></span>
+    <p class="signin">Already have an acount ? <a href="/signin.html">Signin</a> </p>
+</form>
+<script src="reg.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+ h1{
+        color: azure;
+        background-color: green;
+    }
+p {
+        color: darkred;
+        font-size: 50px;
+    }
+body{
+    background-color: rgb(94, 57, 31);
+    margin: 0;
+}
+
+
+.im{
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+#h{
+    float: right;
+    padding-right: 10px;
+    padding-top: 18px;
+    text-decoration: none;
+    
+}
+#chocoimg{
+    width: 100%;
+    height: 36em;
+    background-image: url(https://www.shutterstock.com/image-photo/lumajang-indonesiajuni-13-2021-cadbury-600nw-1992473879.jpg);
+    opacity: 0.4;
+}
+
+#content{
+    position: relative;
+  text-align: center;
+  color: white;
+}
+.centered{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-class{
+    margin-left: 19px;
+}
+.form-label{
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    
+}
+.card{
+    max-width: 30em;
+    text-align: center;
+}
+.card-body{
+    display: block;
+    
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar-brand{
+    font-size: 10em;
+    margin: none;
+}
+#cp {
+  width: 300px;
+  height: 300px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    
+    object-fit: cover;
+}
+.mt-2 {
+    margin-top: 1.5rem !important;
+
+}
+#Contact-section{
+    background-image: url(chococake.jpeg);
+    width: 100%;
+    
+}
+
