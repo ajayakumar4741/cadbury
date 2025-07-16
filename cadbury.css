@@ -53,7 +53,7 @@ body {
 
 /* Labels in form */
 .form-label {
-    color: black;
+    color: white !important;
     font-size: 1.1rem;
     height: 30px;
     font-weight: bold;
